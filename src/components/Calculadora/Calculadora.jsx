@@ -73,7 +73,7 @@ const CalculadoraImc = () => {
                 {resultadoImc}
             </div>
         </form>
-        <img src="../src/images/IMC.png"/>
+        <img src="./src/images/IMC.png" alt="Logo imc"/>
     </section>
     )
 }
