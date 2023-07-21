@@ -74,7 +74,7 @@ const CalculadoraImc = () => {
                     {resultadoImc}
                 </div>
             </form>
-            <img className={styles.logo} src='../src/images/logoIMC.png' alt="Logo imc"/>
+            <img className={styles.logo} src='https://play-lh.googleusercontent.com/Kb4L4rxaPif-AhZNhxDdwehJOR8fcu6_JBXHAp7YjQxNLB0XRuek1PAohQOLxlzPTUQK' alt="Logo imc"/>
         </section>
     )
 }
