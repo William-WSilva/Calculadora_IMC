@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --temaSecundario: rgb(240, 240, 240);
+    --corFormPrincipal: rgb(50, 61, 85);
+    --corSecundaria: #f1e7e7;
+    --corTema: #59dcea;
+}
