@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Calculadora.module.css";
+// import logo from '../src/images/logoIMC.png';
 
 const CalculadoraImc = () => {
     const [peso, setPeso] = useState();
@@ -41,40 +42,40 @@ const CalculadoraImc = () => {
 
     return(
         <section className={styles.container}>
-        <h1 className={styles.color_tema}>Calcular IMC</h1>
-        <form className={styles.form}>
-            
-            <label htmlFor="altura"> Altura (ex: 1,50) </label>
-            <input
-                type="number"
-                step=".01"
-                className={styles.input}
-                name="altura"
-                placeholder="Insira sua altura: 0,00"
-                value={altura}
-                onChange={(e) => setAltura(e.target.value)}
-                required
-            />
+            <h1 className={styles.color_tema}>Calcular IMC</h1>
+            <form className={styles.form}>
+                
+                <label htmlFor="altura"> Altura (ex: 1,50) </label>
+                <input
+                    type="number"
+                    step=".01"
+                    className={styles.input}
+                    name="altura"
+                    placeholder="Insira sua altura: 0,00"
+                    value={altura}
+                    onChange={(e) => setAltura(e.target.value)}
+                    required
+                />
 
-            <label htmlFor="peso"> Peso (ex: 50,00) </label>
-            <input
-                type="number"
-                step=".01"
-                className={styles.input}
-                name="peso"
-                placeholder="Insira o peso: 00,00"
-                value={peso}
-                onChange={(e) => setPeso(e.target.value)}
-                required
-            />
+                <label htmlFor="peso"> Peso (ex: 50,00) </label>
+                <input
+                    type="number"
+                    step=".01"
+                    className={styles.input}
+                    name="peso"
+                    placeholder="Insira o peso: 00,00"
+                    value={peso}
+                    onChange={(e) => setPeso(e.target.value)}
+                    required
+                />
 
-            <h3 className={styles.color_tema}>Resultado IMC:</h3>
-            <div className={styles.resultado}>
-                {resultadoImc}
-            </div>
-        </form>
-        <img src="./src/images/IMC.png" alt="Logo imc"/>
-    </section>
+                <h3 className={styles.color_tema}>Resultado IMC:</h3>
+                <div className={styles.resultado}>
+                    {resultadoImc}
+                </div>
+            </form>
+            <img className={styles.logo} src='../src/images/logoIMC.png' alt="Logo imc"/>
+        </section>
     )
 }
 
