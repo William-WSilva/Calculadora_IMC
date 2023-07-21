@@ -34,7 +34,6 @@ const CalculadoraImc = () => {
         }   
     }
 
-  
     // useEffect para atualizar o resultado do IMC sempre que peso ou altura mudarem
     useEffect(() => {
       calcularIMC();
@@ -74,7 +73,7 @@ const CalculadoraImc = () => {
                 {resultadoImc}
             </div>
         </form>
-        <img src="./src/images/IMC.png"/>
+        <img src="../src/images/IMC.png"/>
     </section>
     )
 }
